@@ -7,3 +7,5 @@ release.sh
 *.d.ts
 *.js.map
 *.cjs.map
+# meta-ops cleanup
+Thumbs.db
