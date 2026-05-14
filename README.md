@@ -1,11 +1,13 @@
-JPEGLosslessDecoderJS
-=====
-A common DICOM compression format is JPEG Lossless.  This format is generally not supported in standard JPEG decoder libraries. 
+# LosslessJPEG
 
-This decoder can read data from the following DICOM transfer syntaxes:
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-- 1.2.840.10008.1.2.4.57    JPEG Lossless, Nonhierarchical (Processes 14)
-- 1.2.840.10008.1.2.4.70    JPEG Lossless, Nonhierarchical (Processes 14 [Selection 1])
+A JavaScript JPEG Lossless decoder.
+
+## Features
+- Supports DICOM JPEG Lossless transfer syntaxes:
+  - 1.2.840.10008.1.2.4.57 JPEG Lossless, Nonhierarchical (Processes 14)
+  - 1.2.840.10008.1.2.4.70 JPEG Lossless, Nonhierarchical (Processes 14 [Selection 1])
 
 ### Usage
 [API](https://github.com/rii-mango/JPEGLosslessDecoderJS/wiki/API) and [more examples](https://github.com/rii-mango/JPEGLosslessDecoderJS/tree/master/tests)
@@ -47,6 +49,9 @@ npm run build
 This will output `lossless.js` and `lossless-min.js` alongside declaration files and source maps to `/release`.
 
 ### Acknowledgments
-This decoder was originally written by Helmut Dersch for Java.  I added support for selection values 2 through 7, contributed bug fixes and ported to JavaScript.
+This decoder was originally written by Helmut Dersch for Java. I added support for selection values 2 through 7, contributed bug fixes and ported to JavaScript.
 
 Also thanks to [@jens-ox](https://github.com/jens-ox) for modernizing this package to TypeScript.
+
+## License
+MIT License — see [LICENSE](LICENSE).
